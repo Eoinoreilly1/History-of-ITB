@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eoins Web Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+	
+	
+<body>
+	
+	<!-- Nav bar Styled to rezise-->
+	<ul class="sidenav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+   <li><a href="Eco.html">Ecology</a></li>
+		<li><a href="History.html">History of ITB</a></li>
+		<li><a href="Localhistory.html">Local History</a></li>
+		<li><a href="Web.html">Web development</a></li>
+					<li><p id="demo"></p></li>
+<!--Countdown to New years  -->
+			<script>
+
+var countDownDate = new Date("dec 31, 2018 00:59:59").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+			
+</ul>
+	
+
+			
+  <!-- main body-->
+<div class="content">
+
+	<h1>
+		The history of ITB
+	
+	
+<img src="images/itbyup.jpg" alt="ITB" class="responsive" width="600" height="400">
+	</h1>
+	
+
+	<h2>Institute of Technology, Blanchardstown (ITB)</h2><br>
+	
+	<p>Established in 1999, ITB is a third-level institution, and a future constituent institute of Technological University Dublin.
+	It was the last-founded Institute of Technology in Ireland and is located within the Business and Technology Park on Blanchardstown Road North, about 15 km from Dublin City and close to the N3 (Navan Road).</p>
+
+ITB provides full-time and part-time higher education courses in a wide range of subjects, making awards at levels from higher certificate, to PhD.
+
+ 
+	
+	
+</div>
+
+
+
+	
+	<footer>
+
+	<a href="https://www.facebook.com/itbdublin/?ref=br_rs"><img src="images/facebook.png" alt="facebook" width="45px" height="45px"></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://twitter.com/itbdublin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twitter.png" alt="twitter" width="50px" height="50px"></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/itbdublin/"><img src="images/insta.png" alt="instagram" width="50px" height="50px"> </a>
+	&nbsp;&nbsp;&nbsp;
+  <a href="http://www.itb.ie/"><img src="images/itb.png" alt="instagram" width="100px" height="50px"> </a>
+</footer>
+	</body>
+</html>
